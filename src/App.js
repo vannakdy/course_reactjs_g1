@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+const App = () => {
+  var x1 = 10;
+  var x2 = 5;
+  var sum = x1/x2;
+  var y = "Demo";
+  y = 100.34;
+  y = true;
+  var my_array = [2,4,3,5,78,99,45,23];
+  var l = my_array.length;
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <div>
+      <h1>Hello ReactJs</h1>
+      <h1>sum : {sum}</h1>
+      <h1>{x1+100}</h1>
+      <h1>y : {y+""}</h1>
 
+      <h1>{my_array[2]}</h1>
+      <h1>{my_array.length}</h1>
+      <h1>{my_array[l-1]}</h1>
+      {
+        my_array.map((item,i)=>{
+          return(
+            <div>
+              <label style={{fontSize:37,paddingLeft:15}}>{(i+1)+". "+item}</label>
+            </div>
+          )
+        })
+      }
+    </div>
+  )
+}
 export default App;

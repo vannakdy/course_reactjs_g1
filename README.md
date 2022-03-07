@@ -1,3 +1,17 @@
+# git important
+1. First, run a fetch to update all origin/<branch> refs to latest:
+    > git fetch --all
+2. Backup your current branch:
+    > git branch backup-master
+    - Then, you have two options
+        > git reset --hard origin/master
+    OR If you are on some other branch:
+        > git reset --hard origin/<branch_name>
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
