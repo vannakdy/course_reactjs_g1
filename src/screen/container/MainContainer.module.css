@@ -1,0 +1,15 @@
+
+.main_menu{
+    background-color: #060442;
+}
+
+.item_ment{
+    padding: 15px 20px;
+    display: inline-block;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+.item_ment:hover{
+    background-color: gray;
+}

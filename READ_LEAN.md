@@ -24,12 +24,13 @@
         component
         screen
             dashboard
-            course
             classroom
-            student
+            course
             teacher
+            student
         helper.js
         App.js
+        
     - Example in App.js
         <BrowserRouter>
             <Routes>
