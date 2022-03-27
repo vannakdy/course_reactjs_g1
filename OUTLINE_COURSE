@@ -1,0 +1,18 @@
+1.component and props
+    - Function and Class Components
+    - Rendering a Component
+        const element = <div />;
+        const element = <Welcome name="Sara" />;
+    - Composing Components
+        - Element 
+        - Component
+        - Profile
+        - Animal
+        - Box
+        - Button
+        - List
+    - Extracting Components
+        - Props are Read-Only
+    -  Conditional Rendering
+    -  Lists and Keys
+

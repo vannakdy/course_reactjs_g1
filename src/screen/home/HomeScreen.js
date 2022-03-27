@@ -5,6 +5,7 @@
 // Component 
 
 import React,{useState} from "react";
+import AnimalCart from "../../component/cart/AnimalCart";
 import "./style1.css";
 const HomeScreen = () => {
 
@@ -73,10 +74,15 @@ const HomeScreen = () => {
         setSalary(Paramitem.salary);
         setIsIndexUpdate(Paramindex);
     }
-
+    const image_tiger_url = require("../../assets/image/animal/tiger.jpg")
     return(
         <div>
             <h1>HomeScreen</h1>
+            <AnimalCart
+                name="Tiger"
+                description={"Demo descrioption tiger"}
+                image_url = {image_tiger_url}
+            />
             <div className="frmStaff">
                 <div className="txtMain">Staff form</div>
                 <input
