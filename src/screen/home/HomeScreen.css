@@ -1,0 +1,30 @@
+.frmStaff{
+    padding: 50px;
+    background-color: gray;
+    margin-top: 20px;
+    width: 200px;
+}
+
+.input{
+    padding: 5px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.btnAdd{
+    padding: 10px 20px;
+    width: 100%;
+    font-weight: bold;
+    background-color: black;
+    color: #FFF;
+}
+.rowStaff{
+    padding: 15px;
+    border-bottom: solid 1px gray;
+
+}
+.txtName{
+    font-size: 20px;
+    font-weight: bold;
+}

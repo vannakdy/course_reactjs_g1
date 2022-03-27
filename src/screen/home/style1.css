@@ -1,0 +1,54 @@
+.grid2{
+    float: right
+}
+.frmStaff{
+    border: 1px gray solid;
+    padding: 25px;
+    width: 400px;
+}
+.txtMain{
+    color: black;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.input{
+    padding: 10px;
+    font-size: 18px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.btnAdd{
+    font-size: 18px;
+    color: white;
+    background-color: black;
+    padding: 10px 65px;
+}
+.btnRemove{
+    font-size: 14px;
+    color: white;
+    background-color: brown;
+    padding: 5px 15px;
+}
+.btnEdit{
+    font-size: 14px;
+    color: white;
+    background-color: rgb(58, 9, 174);
+    padding: 5px 15px;
+}
+.rowStaff{
+    border-bottom: 1px gray solid;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+    
+}
+table{
+    width: 100%;
+}

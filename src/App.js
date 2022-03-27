@@ -1,28 +1,34 @@
-import AboutScreen from '../src/screen/about/AboutScreen';
-import HomeScreen from '../src/screen/home/HomeScreen';
 
-import TeacherListScreen from '../src/screen/teacher/TeacherListScreen';
-import TeacherCreateScreen from '../src/screen/teacher/TeacherCreateScreen';
-import TeacherUpdateScreen from '../src/screen/teacher/TeacherUpdateScreen';
-
-import MainContainer from "../src/screen/container/MainContainer";
-import {BrowserRouter,Routes,Route} from 'react-router-dom';
+import React from "react";
+import HomeScreen from "./screen/home/HomeScreen";
+import TeacherScreen from "./screen/teacher/TeacherScreen";
+import StudentScreen from "./screen/student/StudentScreen";
+import ClassroomScreen from "./screen/classroom/ClassroomScreen";
+// .....
+import {BrowserRouter,Routes,Route,Link} from "react-router-dom";
+import "./App.css"
 
 const App = () => {
-  return(
-    <BrowserRouter>
-      <MainContainer>
-        <Routes>
-          <Route path='/' element={<HomeScreen/>}/>
-          <Route path='/about' element={<AboutScreen/>}/>
+    return (
+        <BrowserRouter>
+            <div style={{padding:20}}>
+                <div className="menu_main">
+                    <Link className="menu_item" to="/">Home</Link>
+                    <Link className="menu_item" to="/teacher">Teacher</Link> 
+                    <Link className="menu_item" to="/student">Student</Link>
+                    <Link className="menu_item" to="/classroom">Classroom</Link>
+                </div>
 
-          <Route path='/teacher' element={<TeacherListScreen/>}/>
-          <Route path='/teacher/create' element={<TeacherCreateScreen/>}/>
-          <Route path='/teacher/:id' element={<TeacherUpdateScreen/>}/>
-          
-        </Routes>
-      </MainContainer>
-    </BrowserRouter>
-  )
+                <Routes>
+                    {/* register route */}
+                    <Route path="/" element={<HomeScreen/>} />
+                    <Route path="/teacher" element={<TeacherScreen/>} />
+                    <Route path="/student" element={<StudentScreen/>} />
+                    <Route path="/classroom" element={<ClassroomScreen/>} />
+                    <Route path="*" element={<h1>Route not found</h1>} />
+                </Routes>
+            </div>
+        </BrowserRouter>
+    )
 }
 export default App;
