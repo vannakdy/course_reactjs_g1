@@ -5,6 +5,7 @@ import TeacherScreen from "./screen/teacher/TeacherScreen";
 import StudentScreen from "./screen/student/StudentScreen";
 import ClassroomScreen from "./screen/classroom/ClassroomScreen";
 import CourseScreen from "./screen/course/CourseScreen";
+import LoginScreen from "./screen/auth/LoginScreen";
 // .....
 import {BrowserRouter,Routes,Route,Link} from "react-router-dom";
 import "./App.css"
@@ -19,6 +20,7 @@ const App = () => {
                     <Link className="menu_item" to="/teacher">Teacher</Link> 
                     <Link className="menu_item" to="/student">Student</Link>
                     <Link className="menu_item" to="/classroom">Classroom</Link>
+                    <Link className="menu_item" to="/login">Login</Link>
                 </div>
 
                 <Routes>
@@ -28,6 +30,8 @@ const App = () => {
                     <Route path="/teacher" element={<TeacherScreen/>} />
                     <Route path="/student" element={<StudentScreen/>} />
                     <Route path="/classroom" element={<ClassroomScreen/>} />
+                    <Route path="/login" element={<LoginScreen/>} />
+                    
                     <Route path="*" element={<h1>Route not found</h1>} />
                 </Routes>
             </div>
